@@ -49,12 +49,31 @@
 
 //3...*************************************** */
 
-const profile={
-    name: "Nasrin",
-    age: 28,
-    fullName:function() {
-        return this.name + " " + this.age
-    }
-}
-console.log(profile.name);
-console.log(profile.fullName());
+                // const profile={
+                //     name: "Nasrin",
+                //     age: 28,
+                //     fullName:function() {
+                //         return this.name + " " + this.age
+                //     }
+                // }
+                // console.log(profile.name);
+                // console.log(profile.fullName());
+
+
+
+
+//3...*************************************** */
+
+                // function greet(name){
+                //     console.log("Hello "+ name);
+                // }
+                // greet("World");
+
+                // const name="John Doe";
+
+                // greet(name);
+
+
+                const sum =(n)=>{
+                    return n.reduce((0,n)=>0+n);
+                }
