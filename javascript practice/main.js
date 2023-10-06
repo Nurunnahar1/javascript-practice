@@ -97,6 +97,30 @@ let count = 0
 
 //3...*****************for loop********************** */
 
-for(let i=0; i <10; i++){
+// for(let i=0; i <10; i++){
+//     console.log(i);
+// }
+//3...*********even********reverse loop********************** */
+
+// for(let i=0; i <10; i+=2){
+//     console.log(i);
+// }
+
+
+//*********odd********reverse loop********************** */
+// for(let i=0; i <20; i+=(2+1)){
+//     console.log(i);
+// }
+
+
+//*****************reverse loop********************** */
+// for(let i=10; i >=0; i--){
+//     console.log(i);
+// }
+
+
+let i = 10
+while(i>=0){
     console.log(i);
+    i--
 }
