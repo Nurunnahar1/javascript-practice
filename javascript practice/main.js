@@ -140,10 +140,18 @@ let count = 0
    
 // }
 //****************************nested loop************************************* */
-for(let i = 0; i<3; i++){
-    // console.log(i)
+// for(let i = 0; i<3; i++){
+//     // console.log(i)
 
-    for(let j= 0; j<3 ; j++){
-        console.log(i, j)
-    }
+//     for(let j= 0; j<3 ; j++){
+//         console.log(i, j)
+//     }
+// }
+
+//*************************iterating string********************************* */
+
+const str= 'Nasrin'
+for(let i=0; i< str.length; i++){
+    console.log(i);
+    // console.log(str[i]);
 }
