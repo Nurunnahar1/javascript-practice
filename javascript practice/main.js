@@ -87,8 +87,16 @@ let count = 0
 // }
 
 
-while(count < 7){
-    $realCount = count +1
-    console.log(`I am Nasrin ${$realCount} ${$realCount < 2 ? 'time' : 'times'}`)
-    count++
+// while(count < 7){
+//     $realCount = count +1
+//     console.log(`I am Nasrin ${$realCount} ${$realCount < 2 ? 'time' : 'times'}`)
+//     count++
+// }
+
+
+
+//3...*****************for loop********************** */
+
+for(let i=0; i <10; i++){
+    console.log(i);
 }
