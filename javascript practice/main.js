@@ -74,6 +74,21 @@
                 // greet(name);
 
 
-                const sum =(n)=>{
-                    return n.reduce((0,n)=>0+n);
-                }
+                // const sum =(n)=>{
+                //     return n.reduce((0,n)=>0+n);
+                // }
+
+
+                //3...*****************loop********************** */
+let count = 0
+// while(count < 7){
+//     console.log(`I am Nasrin ${count+1}`);
+//     count++
+// }
+
+
+while(count < 7){
+    $realCount = count +1
+    console.log(`I am Nasrin ${$realCount} ${$realCount < 2 ? 'time' : 'times'}`)
+    count++
+}
