@@ -147,15 +147,23 @@ let count = 0;
 // }
 
 //special way
-const profile = {
-  name: "Nasrin",
-  age: "28",
-  profession: "Developer",
-};
-// console.log(profile['name']);
+// const profile = {
+//   name: "Nasrin",
+//   age: "28",
+//   profession: "Developer",
+// };
+// // console.log(profile['name']);
 
-for (let key in profile) {
-  // console.log(key);
-//   console.log(profile[key]);
-  console.log(profile.name);
+// for (let key in profile) {
+//   // console.log(key);
+// //   console.log(profile[key]);
+//   console.log(profile.name);
+// }
+
+
+//for of loop
+const profile = ['Nasrin', '28', 'Developer']
+let randStr = 'Nasrin'
+for(let element of profile) {
+    console.log(element)
 }
