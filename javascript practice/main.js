@@ -210,18 +210,35 @@ let count = 0;
 // console.log(Number('10'))
 // console.log(Number('fsdf'))
 // console.log(typeof NaN)
-console.log(parseInt("dsfsd24154"));
-console.log(parseInt("24154fgdg"));
-console.log(parseInt("2415", 10)); //decimal
-console.log(parseInt("2415", 2)); //binary
-console.log(parseInt("10", 2)); //binary
-console.log(parseInt("2415", 8)); //octal
+// console.log(parseInt("dsfsd24154"));
+// console.log(parseInt("24154fgdg"));
+// console.log(parseInt("2415", 10)); //decimal
+// console.log(parseInt("2415", 2)); //binary
+// console.log(parseInt("10", 2)); //binary
+// console.log(parseInt("2415", 8)); //octal
 
-console.log(parseFloat("2.5"));
+// console.log(parseFloat("2.5"));
 
-console.log(Number.MAX_VALUE);
-console.log(Number.MIN_VALUE);
+// console.log(Number.MAX_VALUE);
+// console.log(Number.MIN_VALUE);
 
-const num = 3.1416;
-console.log(num.toFixed(3));
-console.log(num.toFixed());
+// const num = 3.1416;
+// console.log(num.toFixed(3));
+// console.log(num.toFixed());
+
+//****************************NaN(Not a number) ************************************* */
+
+console.log(NaN === NaN);
+console.log(1 === 1);
+
+console.log(isNaN(5));
+console.log(isNaN("454dfds"));
+
+console.log(Number(5));
+console.log(Number(true));
+console.log(Number(false));
+
+console.log(Number.isNaN(NaN));
+console.log(Number.isNaN(true));
+console.log(Number.isNaN(false));
+console.log(Number.isNaN('55dsfds'));
