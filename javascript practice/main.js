@@ -169,16 +169,32 @@ let count = 0;
 
 //****************************string************************************* */
 
-const str = "Hello dear";
-console.log(str.length);
-console.log(str.toUpperCase());
-console.log(str.toLowerCase());
-console.log(str.indexOf("d"));
-console.log(str.lastIndexOf("d"));
+// const str = "Hello dear";
+// console.log(str.length);
+// console.log(str.toUpperCase());
+// console.log(str.toLowerCase());
+// console.log(str.indexOf("d"));
+// console.log(str.lastIndexOf("d"));
 
-const trimStr = str.trim();
-console.log(trimStr.length);
+// const trimStr = str.trim();
+// console.log(trimStr.length);
 
-console.log(str.includes("d"));
-console.log(str.startsWith("He"));
-console.log(str.endsWith("dear"));
+// console.log(str.includes("d"));
+// console.log(str.startsWith("He"));
+// console.log(str.endsWith("dear"));
+
+
+//****************************slice ************************************* */
+// const str = 'Hello dear'
+
+// console.log(str.slice(0,5))
+// console.log(str.slice(6,9))
+// console.log(str.slice(6))
+// console.log(str.slice(-6))
+// console.log(str.slice())
+
+//substring
+const str = 'Hello dear'
+console.log(str.substring(0,5))
+console.log(str.substring(6,8))
+console.log(str.substring(-6,8))
