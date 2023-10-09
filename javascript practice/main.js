@@ -228,17 +228,45 @@ let count = 0;
 
 //****************************NaN(Not a number) ************************************* */
 
-console.log(NaN === NaN);
-console.log(1 === 1);
+// console.log(NaN === NaN);
+// console.log(1 === 1);
 
-console.log(isNaN(5));
-console.log(isNaN("454dfds"));
+// console.log(isNaN(5));
+// console.log(isNaN("454dfds"));
 
-console.log(Number(5));
-console.log(Number(true));
-console.log(Number(false));
+// console.log(Number(5));
+// console.log(Number(true));
+// console.log(Number(false));
 
-console.log(Number.isNaN(NaN));
-console.log(Number.isNaN(true));
-console.log(Number.isNaN(false));
-console.log(Number.isNaN('55dsfds'));
+// console.log(Number.isNaN(NaN));
+// console.log(Number.isNaN(true));
+// console.log(Number.isNaN(false));
+// console.log(Number.isNaN('55dsfds'));
+
+//****************************NaN(Not a number) ************************************* */
+
+const array = [1, 2, 3, 4, 5]
+
+console.log(array.length)
+console.log(array[2])
+
+//adding element at the end of the array
+array.push(10)
+console.log(array)
+
+//remove elemenr at the end of the array
+array.pop(10)
+console.log(array)
+
+//adding element at the beginning of the array
+array.unshift(10)
+console.log(array)
+
+
+//removing element at the beginning of the array
+array.shift(10)
+console.log(array)
+
+
+
+console.log(array[array.length - 2])
