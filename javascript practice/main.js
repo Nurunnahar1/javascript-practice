@@ -160,10 +160,25 @@ let count = 0;
 //   console.log(profile.name);
 // }
 
+// //for of loop
+// const profile = ['Nasrin', '28', 'Developer']
+// let randStr = 'Nasrin'
+// for(let element of profile) {
+//     console.log(element)
+// }
 
-//for of loop
-const profile = ['Nasrin', '28', 'Developer']
-let randStr = 'Nasrin'
-for(let element of profile) {
-    console.log(element)
-}
+//****************************string************************************* */
+
+const str = "Hello dear";
+console.log(str.length);
+console.log(str.toUpperCase());
+console.log(str.toLowerCase());
+console.log(str.indexOf("d"));
+console.log(str.lastIndexOf("d"));
+
+const trimStr = str.trim();
+console.log(trimStr.length);
+
+console.log(str.includes("d"));
+console.log(str.startsWith("He"));
+console.log(str.endsWith("dear"));
