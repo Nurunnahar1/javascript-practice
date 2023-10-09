@@ -183,7 +183,6 @@ let count = 0;
 // console.log(str.startsWith("He"));
 // console.log(str.endsWith("dear"));
 
-
 //****************************slice ************************************* */
 // const str = 'Hello dear'
 
@@ -199,9 +198,30 @@ let count = 0;
 // console.log(str.substring(6,8))
 // console.log(str.substring(-6,8))
 
-
-
 //****************************split ************************************* */
 // const str = 'Hello dear'
 // console.log(str.split(' '))
 // console.log(str.concat(' I ', 'am Nasrin'))
+
+//****************************number ************************************* */
+// console.log(typeof 10 )
+// console.log(typeof -10 )
+// console.log(typeof -10.254 )
+// console.log(Number('10'))
+// console.log(Number('fsdf'))
+// console.log(typeof NaN)
+console.log(parseInt("dsfsd24154"));
+console.log(parseInt("24154fgdg"));
+console.log(parseInt("2415", 10)); //decimal
+console.log(parseInt("2415", 2)); //binary
+console.log(parseInt("10", 2)); //binary
+console.log(parseInt("2415", 8)); //octal
+
+console.log(parseFloat("2.5"));
+
+console.log(Number.MAX_VALUE);
+console.log(Number.MIN_VALUE);
+
+const num = 3.1416;
+console.log(num.toFixed(3));
+console.log(num.toFixed());
