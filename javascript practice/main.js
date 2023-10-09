@@ -194,7 +194,14 @@ let count = 0;
 // console.log(str.slice())
 
 //substring
-const str = 'Hello dear'
-console.log(str.substring(0,5))
-console.log(str.substring(6,8))
-console.log(str.substring(-6,8))
+// const str = 'Hello dear'
+// console.log(str.substring(0,5))
+// console.log(str.substring(6,8))
+// console.log(str.substring(-6,8))
+
+
+
+//****************************split ************************************* */
+// const str = 'Hello dear'
+// console.log(str.split(' '))
+// console.log(str.concat(' I ', 'am Nasrin'))
