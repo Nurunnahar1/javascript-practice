@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dommenipulation</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    
+<div class="container">
+    <div class="row my-5">
+        <div class="col-md-12">
+            <div class="card px-5" id="main">
+                <div class="card-body">
+                    <h4 class="card-title text-center">Task List </h4>
+                    <div class="row mb-3">
+                        <form action="" id="task-form">
+                            <div class="col-md-12">
+                                <label for="task" class="form-label ">Add New Task</label>
+                                <input type="text" name="task" id="task" class="form-control ">
+                            </div>
+                            <input type="submit" value="Add Task" class="btn btn-success ">
+                        </form>
+                    </div>
+
+                    <div class="card-body">
+                        <h5>Tasks</h5>
+                        <ul list-group>
+                            <li class="list-group-item  justify-content-between  align-items-center ">Lisy Item accordion 
+                                <a href="#" class="delete-item">x</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <script src="main.js"></script>
+</body>
+</html>
