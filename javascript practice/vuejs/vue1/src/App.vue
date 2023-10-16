@@ -1,36 +1,27 @@
 <template>
-  <h1>Hello World</h1>
-  <h1>{{ 2+2 }}</h1>
-  <h1>{{ new Date().getDate() }}</h1> <!--//todays date--> 
+  <h2>{{ first_name }}</h2>
+<h2>{{ last_name }}</h2>
+<h2>{{ age }}</h2>
+ <button @click="getFullName">Click</button>
 
 
-  <h1>{{ first_name }}</h1>
-  <h1>{{ last_name }}</h1>
 
-  <h3>{{ num1+num2 }}</h3>
+</template>
 
 
-   <button @click="getFullName">Click</button>
- </template>
 
 
- <script  >
-  export default {
-    data(){
-      return{
-        first_name:"Bill",
-        last_name:"Gates",
-        age:65,
+<script setup>
+let first_name ="Nasrin"
+let last_name = "Muskan"
+let age = 28
+const getFullName=()=>{
+  alert("hi")
+}
+ 
+</script>
 
-        num1:10,
-        num2:20,
 
-        getFullName:()=>{
-          alert("Hello ")
-        }
-      }
-    }
-  }
- </script>
 
- <style scoped></style>
+
+<style scoped></style>
