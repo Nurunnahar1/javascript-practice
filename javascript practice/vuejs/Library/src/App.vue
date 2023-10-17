@@ -1,39 +1,23 @@
 <script setup>
-
-
-// what time today?
- const date = new Date()
- const dateString = date.toLocaleString();
-
- const profession = "<strong>Laravel Developer</strong>"
-
- function getData(){
-  return "I am good "
- }
-
- const number = 12;
-const person = {
-    fname : "john",
-    lname : "Doe",
-    getName(){
-        return this.fname+" "+this.lname;
-    }
-}
+ const image = "https://cdn.pixabay.com/photo/2023/09/20/20/17/skyline-8265564_960_720.jpg"
+ const title = "Water surrounded by trees and mountains"
+ const link = "https://unsplash.com/photos/NRQV-hBF10M" 
 
 </script>
 
 <template>
  
-      <div  >
-          <h1 class="text-red-500 bg-yellow-200 " >{{ message }}</h1>
-          <h2  >Today is <span>{{ dateString }}</span></h2>
-          <h2  >Today <span>{{ getData() }}</span></h2>
-          <h2  > <span>{{ number }}/4 = {{ number/4 }}</span></h2> <!--this is called 
-          expraction-->
-          <h2  >Person name is  <span>{{ person.getName() }}</span></h2>
-
-          <h1><span v-html="profession"></span></h1> <!--for hide html tag-->
-      </div>
+       <section>
+            <h1>Data project</h1>
+            <section>
+                <div>
+                    <!-- <img v-bind:title="title" v-bind:src="image" alt=""> -->
+                    <img :title="title" :src="image" :alt="title">
+                    <h2>{{ title }}</h2>
+                    <a target="_blank" :href="link">Image Source</a>
+                </div>
+            </section>
+       </section>
  
 </template>
 
