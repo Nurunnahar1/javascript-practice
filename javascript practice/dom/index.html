@@ -1,43 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dommenipulation</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
 </head>
-<body>
-    
-<div class="container">
-    <div class="row my-5">
-        <div class="col-md-12">
-            <div class="card px-5" id="main">
-                <div class="card-body">
-                    <h4 class="card-title text-center">Task List </h4>
-                    <div class="row mb-3">
-                        <form action="" id="task-form">
-                            <div class="col-md-12">
-                                <label for="task" class="form-label ">Add New Task</label>
-                                <input type="text" name="task" id="task" class="form-control ">
-                            </div>
-                            <input type="submit" value="Add Task" class="btn btn-success ">
-                        </form>
-                    </div>
 
+<body>
+
+    <div class="container">
+        <div class="row my-5">
+            <div class="col-md-12">
+                <div class="card px-5" id="main">
                     <div class="card-body">
-                        <h5>Tasks</h5>
-                        <ul list-group>
-                            <li class="list-group-item  justify-content-between  align-items-center ">Lisy Item accordion 
-                                <a href="#" class="delete-item">x</a>
-                            </li>
-                        </ul>
+                        <h4 class="card-title text-center">Js Task List </h4>
+
+                        <div class="container">
+                            <div class="row my-5">
+                                <div id="main" class="card px5">
+                                    <div class="card-body">
+                                        <h4 class="card-title text-center">Task List</h4>
+                                        <div class="row mb-3">
+                                            <form action="task-form">
+                                                <div class="col-md-12">
+                                                    <label for="task" class="form-label">Add New Task</label>
+                                                    <input type="text" name="task" id="task" value=""
+                                                        class="form-control">
+                                                </div>
+                                                <input type="submit" value="Add Task" class="btn btn-success ">
+                                            </form>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="card-body">
+                                        <h5 id="card-title">Tasks</h5>
+                                        <ul class="list-group ">
+                                            <li
+                                                class="list-group-item d-flex justify-content-between align-items-center ">
+                                                List Item
+                                                <a href="#" class="delete-item secondary-content">
+                                                    <i class="fa-solid fa-xmark"></i>
+                                                </a>
+                                            </li>
+                                            <li
+                                                class="list-group-item d-flex justify-content-between align-items-center ">
+                                                List Item
+                                                <a href="#" class="delete-item secondary-content">
+                                                    <i class="fa-solid fa-xmark"></i>
+                                                </a>
+                                            </li>
+                                            <li
+                                                class="list-group-item d-flex justify-content-between align-items-center ">
+                                                List Item
+                                                <a href="#" class="delete-item secondary-content">
+                                                    <i class="fa-solid fa-xmark"></i>
+                                                </a>
+                                            </li>
+                                            <li
+                                                class="list-group-item d-flex justify-content-between align-items-center ">
+                                                List Item
+                                                <a href="#" class="delete-item secondary-content">
+                                                    <i class="fa-solid fa-xmark"></i>
+                                                </a>
+                                            </li>
+                                            <li
+                                                class="list-group-item d-flex justify-content-between align-items-center ">
+                                                List Item
+                                                <a href="#" class="delete-item secondary-content">
+                                                    <i class="fa-solid fa-xmark"></i>
+                                                </a>
+                                            </li>
+                                            <li
+                                                class="list-group-item d-flex justify-content-between align-items-center ">
+                                                List Item
+                                                <a href="#" class="delete-item secondary-content">
+                                                    <i class="fa-solid fa-xmark"></i>
+                                                </a>
+                                            </li>
+                                            <li
+                                                class="list-group-item d-flex justify-content-between align-items-center ">
+                                                List Item
+                                                <a href="#" class="delete-item secondary-content">
+                                                    <i class="fa-solid fa-xmark"></i>
+                                                </a>
+                                            </li>
+
+                                        </ul>
+                                        <a href="" class="clear-task btn btn-danger my-4">Clear Tasks</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"></script>
     <script src="main.js"></script>
 </body>
+
 </html>
