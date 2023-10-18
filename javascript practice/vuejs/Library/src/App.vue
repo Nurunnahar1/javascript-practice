@@ -1,32 +1,24 @@
 <script setup>
 
-const images = [
-    {
-        image:"https://cdn.pixabay.com/photo/2023/09/20/20/17/skyline-8265564_960_720.jpg",
-        title:"Water surrounded by trees and mountains",
-        link:"https://unsplash.com/photos/NRQV-hBF10M"
+ 
+const num = 16
+function evenOrOdd(num){
+    if(num%2==0){
+        return "Even"
     }
-]
-
-
-//  const image = "https://cdn.pixabay.com/photo/2023/09/20/20/17/skyline-8265564_960_720.jpg"
-//  const title = "Water surrounded by trees and mountains"
-//  const link = "https://unsplash.com/photos/NRQV-hBF10M" 
+    return "Odd"
+}
 
 </script>
 
 <template>
  
-       <section>
-            <h1>Data project</h1>
-            <section>
-                <div>
-                    <img :title="images[0].title" :src="images[0].image" :alt="images[0].title">
-                    <h2>{{  images[0].title }}</h2>
-                    <a target="_blank" :href="images[0].link">Image Source</a>
-                </div>
-            </section>
-       </section>
+      <div  >
+       
+
+          <!-- <h2>{{ num }} is {{ evenOrOdd(num) }}</h2> -->
+          <h2>{{ num }} is {{ num % 2==0 ? "Even" : "Odd"}}</h2>
+      </div>
  
 </template>
 
