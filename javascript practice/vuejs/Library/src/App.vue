@@ -3,6 +3,12 @@
  const bgIndigo = "bg-indigo-400"
  const bgGreen = "bg-green-400"
  const textColor = "text-white"
+
+const bgRed = "bg-red-600"
+const bgDarkGreen = "bg-green-600"
+const weekend = true
+
+
 </script>
 
 <template>
@@ -17,7 +23,7 @@
     </section>
     
     <section>
-        <div class="bg-red-600 h-16 flex items-center justify-center text-white">It's a weekday!</div>
+        <div class="  h-16 flex items-center justify-center text-white" :class="weekend==true?bgDarkGreen:bgRed">It's a weekday!</div>
     </section>
 
  </section>
