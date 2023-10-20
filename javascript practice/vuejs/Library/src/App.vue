@@ -1,40 +1,24 @@
 <script setup>
- const bgOrange = 'background-color:    rgb(251,146,60,1); color: whitte; font-size:24px'
- const bgIndigo = 'background-color:    rgb(129,140,248, 1)'
- const bgGreen = 'background-color:    rgb(52,211,153, 1)'
-
-
- const bgRed = 'background-color: rgba(220,38,38,1)'
- const bgDarkGreen = 'background-color: rgba(5,150,105,1)'
- const weekday = true
-
+const location = "Bogura"
+const weather = "t"
 </script>
 
 <template>
-    <section class="container mx-auto">
-      <h1 class="text-center text-3xl py-12">Class & Style Binding</h1>
-  
-      <section class="flex space-x-10">
-        <div class="w-1/3  h-16" :style="[bgOrange]">Hello I am Nasrin.......</div>
-        <div class="w-1/3  h-16" :style="[bgIndigo]"></div>
-        <div class="w-1/3  h-16" :style="[bgGreen]"></div>
-      </section>
-  
-      <section class="mt-10  ">
-        <div class=" h-16 flex items-center justify-center text-white" :style="weekday==true?bgRed:bgDarkGreen">
-          It's a weekday!
-        </div>
-      </section>
-  
-      <section class="mt-10 hidden">
-        <div class="bg-teal-100 border-t-4 border-teal-500 rounded-b text-teal-900 px-4 py-3 shadow-md" role="alert">
-          <p class="font-bold">Our privacy policy has changed</p>
-          <p class="text-sm">Make sure you know how these changes affect you.</p>
-        </div>
-      </section>
-    </section>
-  </template>
-  
+  <section class="container mx-auto flex items-center flex-col">
+    <h1 class="text-center text-2xl py-10">Logic in Vue.js</h1>
+    <div class="w-1/3 bg-red-200 p-10 flex items-center flex-col space-y-10">
+      <h1 class="text-3xl">{{ location }}</h1>
+      <h2 class="text-2xl" v-if="'s'==weather" >Weather: Sunny</h2>
+      <h2 class="text-2xl" v-if="'pc'==weather" >Weather: Partly Cloudy</h2>
+      <h2 class="text-2xl" v-if="'r'==weather">Weather: Rainy</h2>
+      <h2 class="text-2xl" v-if="'t'==weather">Weather: Thunderstorm</h2>
+   
+      <img v-if="'s'==weather"  src="https://creazilla-store.fra1.digitaloceanspaces.com/icons/7911203/weather-icon-md.png" alt="">
+      <img v-if="'pc'==weather"  src="https://creazilla-store.fra1.digitaloceanspaces.com/icons/7912718/weather-icon-md.png" alt="">
+      <img v-if="'r'==weather"  src="https://creazilla-store.fra1.digitaloceanspaces.com/icons/7913380/weather-icon-md.png" alt="">
+      <img v-if="'t'==weather" src="https://creazilla-store.fra1.digitaloceanspaces.com/icons/7912589/weather-icon-md.png" alt="">
+    </div>
+  </section>
+</template>
 
-<style scoped>
-</style>
+<style scoped></style>
