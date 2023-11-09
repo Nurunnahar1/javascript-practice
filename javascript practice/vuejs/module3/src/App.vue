@@ -15,22 +15,20 @@
 }
 
 
-  //get object data
-  const data ={
-  message:'Welcome to vuejs',
-  date:'21-10-2023',
-  tasks:[1,2,3,4,5]
-}
+// import {data} from './data/data'
+import data from './data/data'
 </script>
 
 <template>
- <h1>{{ message }}</h1>
+ <!-- <h1>{{ message }}</h1>
  <h3>{{ getDate() }}</h3>
 
  <h1>{{ data.message }}</h1>
  <h1>{{ data.date }}</h1>
  <p>You have {{ data.tasks.length }} tasks</p>
- <p>You have {{ data.tasks[2] }} tasks</p>
+ <p>You have {{ data.tasks[2] }} tasks</p> -->
+ <h1>{{ data.message }}</h1>
+ <p>Today is <span>{{ data.date }}</span></p>
  
 </template>
 
