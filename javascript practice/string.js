@@ -21,3 +21,13 @@ let x = "Hello world";
 console.log(x.split(","));
 console.log(x.split(" "));
 console.log(x.split(""));
+
+//===================5=================
+// let str = "I live in Bangladesh";
+// console.log(str.indexOf("B"));   //when i search word or litter
+
+// let str = "I live in Bangladesh";
+// console.log(str.search("B")); //when i search word or litter
+
+let str = "I live in Bangladesh";
+console.log(str.match("i")); //when i search word or litter
