@@ -21,3 +21,7 @@ console.log(y);
 
 console.log(myFunction(7, 7));
 myFunction(7, 7);  //this is wrong
+
+
+
+
