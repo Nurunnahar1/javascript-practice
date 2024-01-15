@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript project-3</title>
+</head>
+
+<body>
+
+
+    <script>
+        let name = prompt('Your name');
+
+        let birth_year = prompt('Your birth year');
+        let current_year = new Date().getFullYear();
+
+        let age = current_year - parseInt(birth_year);
+        let female = confirm('Are you Female?');
+        let marriage_age = 18;
+
+        if(female) {
+            marriage_age = 18;
+        }else{
+            marriage_age = 21;
+        }
+
+         
+
+
+        if (age >= 18) {
+            console.log(`Hello ${name}, you can get merry because you are ${age} years old`);
+        } else {
+            console.log(`Hello ${name}, you can not get merry because you are ${age} years old`);
+
+        }
+    </script>
+</body>
+
+</html>
