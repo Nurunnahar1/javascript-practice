@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript practice</title>
+</head>
+<body>
+    
+
+    <script>
+        let name = prompt('Your name');
+        let birth_year =prompt('Your birth year');
+        let current_year = new Date().getFullYear();
+        let age = current_year - parseInt(birth_year);
+
+        if(age>=20){
+            console.log(`Hello ${name}, you can get merry because you are ${age} years old`);
+        }else{
+            console.log(`Hello ${name}, you can not get merry because you are ${age} years old`);
+
+        }
+    </script>
+</body>
+</html>
