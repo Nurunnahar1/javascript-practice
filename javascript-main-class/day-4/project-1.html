@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript Code</title>
+</head>
+
+<body>
+
+  <script>
+    let name = prompt("Your name");
+    let permission = confirm("Do you get permission?");
+    let amount = prompt("Amount");
+    let strong = confirm("Are you strong?");
+
+    if (permission == true && amount >= 500 && strong == true) {
+      console.log( `${name} You are selected.`);
+    } else {
+      console.log("You are not selected.");
+    }
+  </script>
+
+</body>
+
+</html>
