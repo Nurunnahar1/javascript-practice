@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project 5</title>
+</head>
+<body>
+    
+
+    <script>
+
+        let name = prompt('Your name');
+        let bangla = prompt('Subject Bangla');
+
+        let gpa;
+        let grade;
+
+        if(bangla>= 0 && bangla < 33){
+            gpa = 0; 
+            grade = 'F';
+        }else if(bangla>= 34 && bangla < 39){
+            gpa = 2;
+            grade = 'D';
+        }else if(bangla>= 40 && bangla < 59){
+             gpa=2.5; 
+             grade='C' ; 
+        }else if(bangla>= 60 && bangla < 69){ 
+            gpa=3.00; 
+            grade='B' ;
+        }else if(bangla>= 70 && bangla < 79){ 
+            gpa=4.00; 
+            grade='A' ;
+        }else if(bangla>= 40 && bangla < 59){
+            gpa=5.00;
+            grade='A+' ;
+        }else{
+            gpa = 'There is a problem';
+            grade = 'There is a problem';
+        }
+
+        console.log(`
+            Name : ${name}
+            Marks : ${bangla}
+            Gpa : ${gpa}
+        `);
+
+    </script>
+</body>
+</html>
