@@ -1,0 +1,43 @@
+<!-- Write a logic to find the user's body max index (BMI). -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+</head>
+
+<body>
+
+    <script>
+       
+        let weight = parseFloat(prompt("Enter your weight in kilograms"));
+        let height = parseFloat(prompt("Enter your height in centimeters"));
+
+    
+        let heightInMeters = height / 100; // (1 meter = 100 centimeters)
+
+       
+        let bmi = weight / (heightInMeters * heightInMeters);
+
+      
+        console.log("Your BMI is: " + bmi.toFixed(2));
+
+      
+        if (bmi < 18.5) {
+            console.log("Underweight");
+        } else if (bmi >= 18.5 && bmi < 25) {
+            console.log("Normal weight");
+        } else if (bmi >= 25 && bmi < 30) {
+            console.log("Overweight");
+        } else {
+            console.log("Obese");
+        }
+    </script>
+</body>
+
+</html>
