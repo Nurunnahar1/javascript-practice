@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <script>
+        // let amount = prompt('put your amount');
+        let dollars = prompt("put dollar");
+        let pounds = prompt("put pound");
+        let euros = prompt("put euro");
+
+        let dollar_to_taka = 105;
+        let pound_to_taka = 90;
+        let euro_to_taka = 80;
+
+        let taka;
+
+
+        if (dollars) {
+            taka = dollars * dollar_to_taka;
+            console.log(taka);
+        } else if (pounds) {
+            taka = pounds * pound_to_taka;
+            console.log(taka);
+        } else if(euros) {
+            taka = euros * euro_to_taka;
+            console.log(taka);
+        }else{
+            console.log('Something went wrong');
+        }
+    </script>
+</body>
+
+</html>
