@@ -1,0 +1,42 @@
+<!-- Formulate the conditions to find the area of a square, rectangle, triangle, circle -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+</head>
+
+<body>
+    <!-- length   width radius  lend   elevation -->
+
+
+    <script>
+        let length = prompt('Please enter the length');
+        let width = prompt('Please enter the width');
+        let elevation = prompt('Please enter the elevation');
+        let lend = prompt('Please enter the lend');
+        let radius = prompt('Please enter the radius');
+
+        let result;
+
+        if (length && width) {
+            result = length * width;
+            console.log(`Area of rectangle or square: ${result}`);
+        } else if (lend && elevation) {
+            result = 0.5 * lend * elevation;
+            console.log(`Area of triangle: ${result}`);
+        } else if (radius) {
+            result = 3.1416 * radius * radius;
+            console.log(`Area of circle: ${result}`);
+        } else {
+            console.log('Invalid input or something went wrong');
+        }
+    </script>
+</body>
+
+</html>
