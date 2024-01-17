@@ -1,0 +1,53 @@
+<!-- Find the GPA and Grade only keep 33 for General Quota and pass mark 20 instead of 33 for Liberation War Quota -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 5</title>
+</head>
+
+<body>
+
+    <script>
+        let name = prompt('Your name');
+        let marks = prompt('Your marks');
+        let liberationWarQuota = confirm('Do you have Liberation War Quota?')
+
+        let gpa;
+        let grade;
+
+        if ((marks >= 0 && marks < 33) || (liberationWarQuota && marks < 20)) {
+            gpa = 0;
+            grade = 'F';
+        } else if ((marks >= 33 && marks < 39) || (liberationWarQuota && marks >= 20)) {
+            gpa = 2;
+            grade = 'D';
+        } else if (marks >= 40 && marks < 59) {
+            gpa = 2.5;
+            grade = 'C';
+        } else if (marks >= 60 && marks < 69) {
+            gpa = 3.00;
+            grade = 'B';
+        } else if (marks >= 70 && marks < 79) {
+            gpa = 4.00;
+            grade = 'A';
+        } else if (marks >= 80 && marks <= 100) {
+            gpa = 5.00;
+            grade = 'A+';
+        } else {
+            gpa = 'There is a problem';
+            grade = 'There is a problem';
+        }
+        console.log(`
+         Name : ${name} 
+         Marks : ${marks}
+         Gpa : ${gpa}
+         Grade : ${grade} `);
+    </script>
+</body>
+
+</html>
