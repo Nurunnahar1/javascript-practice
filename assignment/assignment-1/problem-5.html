@@ -19,13 +19,23 @@
 
         let gpa;
         let grade;
+        let passNumber;
 
-        if ((marks >= 0 && marks < 33) || (liberationWarQuota && marks < 20)) {
+        if (liberationWarQuota) {
+            passNumber = 20;
+        } else {
+            passNumber = 33;
+        }
+
+
+        if ((marks >= 0 && marks < passNumber) || liberationWarQuota === false) {
             gpa = 0;
             grade = 'F';
-        } else if ((marks >= 33 && marks < 39) || (liberationWarQuota && marks >= 20)) {
+        } else if ((marks >=
+                passNumber && marks < 39) || liberationWarQuota === true) {
             gpa = 2;
             grade = 'D';
+
         } else if (marks >= 40 && marks < 59) {
             gpa = 2.5;
             grade = 'C';
