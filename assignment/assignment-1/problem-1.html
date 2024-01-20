@@ -1,5 +1,6 @@
-
 <!-- Create a condition where a user can convert some of his Dollars, Pounds, Euros into Rupees. -->
+<!--  এমন একটি কন্ডিসন তৈরি করুন যেখানে একজন ইউজার তার কিছু ডলার, পাউন্ড, ইওরো কে টাকাতে কনভার্ট করতে পারবে -->
+
 
 
 
@@ -16,30 +17,66 @@
 
 
     <script>
-        // let amount = prompt('put your amount');
-        let dollars = prompt("put dollar");
-        let pounds = prompt("put pound");
-        let euros = prompt("put euro");
 
-        let dollar_to_taka = 105;
-        let pound_to_taka = 90;
-        let euro_to_taka = 80;
+        // ================== one way==============
+       
+                        // let dollars = prompt("put dollar");
+                        // let pounds = prompt("put pound");
+                        // let euros = prompt("put euro");
 
-        let taka;
+                        // let dollar_to_taka = 105;
+                        // let pound_to_taka = 90;
+                        // let euro_to_taka = 80;
+
+                        // let taka;
 
 
-        if (dollars) {
-            taka = dollars * dollar_to_taka;
-            console.log(taka);
-        } else if (pounds) {
-            taka = pounds * pound_to_taka;
-            console.log(taka);
-        } else if(euros) {
-            taka = euros * euro_to_taka;
-            console.log(taka);
-        }else{
-            console.log('Something went wrong');
-        }
+                        // if (dollars) {
+                        //     taka = dollars * dollar_to_taka;
+                        //     console.log(taka);
+                        // } else if (pounds) {
+                        //     taka = pounds * pound_to_taka;
+                        //     console.log(taka);
+                        // } else if (euros) {
+                        //     taka = euros * euro_to_taka;
+                        //     console.log(taka);
+                        // } else {
+                        //     console.log('Something went wrong');
+                        // }
+
+
+         // ================== another way==============
+
+                        let amount = prompt("Your amount");
+                        let currency = prompt("currency name");
+
+                        let rate;
+
+                        switch (currency) {
+                            case "dollar":
+                                rate = 110;
+                                break;
+
+                            case "pound":
+                                rate = 139;
+                                break;
+
+                            case "euro":
+                                rate = 140;
+                                break;
+
+                            default:
+                                rate = 110;
+                                break;
+
+
+                        }
+
+                        console.log(`
+                            ${amount} ${currency} = ${amount * rate} BDT
+                        `);
+
+
     </script>
 </body>
 

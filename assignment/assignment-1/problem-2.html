@@ -1,4 +1,5 @@
 <!-- Enter the conditions to find a husband for marriage where the age of the husband is minimum 30, salary is minimum 50 thousand taka and height is 6 feet or if salary is 2 lakh then nothing else is required, ,, the girl will accept for marriage. -->
+<!-- বিয়ের জন্য পাত্র খুজে বের করার কন্ডিসন লিখুন যেখানে পাত্রের বয়স মিনিমাম ৩০ , সেলারী ৫০ হাজার টাকা মিনিমাম এবং লম্বা ৬ ফিট হতে হবে অথবা সেলারী ২ লাখ হলে আর কিছুই লাগবে না , , , মেয়ে বিয়ের জন্য কবুল বলবে -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -13,19 +14,28 @@
 
 
     <script>
-        // let amount = prompt('put your amount');
-        let age = prompt("Enter your age");
-        let salary = prompt("Enter your salary");
-        let height = prompt("Enter your height");
+    //    ======================= one way===============
+   
+                    // let age = prompt("Enter your age");
+                    // let salary = prompt("Enter your salary");
+                    // let height = prompt("Enter your height");
 
 
 
 
-        if ((age >= 30 && salary >= 50000 && height == 6) || salary == 200000) {
-            console.log('girl will accept for marriage.');
-        } else {
-            console.log('girl will not accept for marriage.');
-        }
+                    // if ((age >= 30 && salary >= 50000 && height == 6) || salary == 200000) {
+                    //     console.log('girl will accept for marriage.');
+                    // } else {
+                    //     console.log('girl will not accept for marriage.');
+                    // }
+
+
+         // ======================= another  way===============
+                    let age = prompt("Enter your age");
+                    let salary = prompt("Enter your salary");
+                    let height = prompt("Enter your height");
+                    ((age >= 30 && salary >= 50000 && height ==6) || (salary == 200000)) ? console.log('girl will accept') : console.log('girl will not accept');
+
     </script>
 </body>
 
