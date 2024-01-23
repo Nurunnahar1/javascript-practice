@@ -19,31 +19,31 @@
 
       switch(true){
         case marks>=0 && marks<33:
-            gap = 0;
+            gpa = 0;
             grade = "F";
             break;
         case marks>=33 && marks<39:
-            gap = 2;
+            gpa = 2;
             grade = "D";
             break;
         case marks>=40 && marks<49:
-            gap = 2.5;
+            gpa = 2.5;
             grade = "C";
             break;
         case marks>=50 && marks<59:
-            gap = 3;
+            gpa = 3;
             grade = "B";
             break;
         case marks>=60 && marks<69:
-            gap = 3.5;
+            gpa = 3.5;
             grade = "A-";
             break;
         case marks>=70 && marks<79:
-            gap = 4;
+            gpa = 4;
             grade = "A";
             break;
         case marks>=80 && marks<100:
-            gap = 5;
+            gpa = 5;
             grade = "A+";
             break;
         default:
@@ -53,7 +53,7 @@
 
       console.log(`
         Name   : ${name}
-        Number : ${name}
+        Number : ${marks}
         Gpa    : ${gpa}
         Grade  : ${grade}
       
