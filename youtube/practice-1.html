@@ -17,12 +17,19 @@ QuerySelectorAll()
 <body>
 
 
+    <!-- <h1 id="id1">Hello Everyone...........</h1>
     <h1 id="id1">Hello Everyone...........</h1>
     <h1 id="id1">Hello Everyone...........</h1>
     <h1 id="id1">Hello Everyone...........</h1>
-    <h1 id="id1">Hello Everyone...........</h1>
-    <h1 id="id1">Hello Everyone...........</h1>
-    <p class="class1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae iusto quisquam ut, rerum quas laboriosam sapiente odit neque ducimus aut.</p>
+    <h1 onclick="alert('Hello Nasrin.......')">Click me</h1> -->
+
+    
+    <button onclick="clickme()">Click me</button>
+    <button onclick="time()">What time is it now?</button>
+    <h3 id="time"></h3>
+
+
+    <!-- <p class="class1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae iusto quisquam ut, rerum quas laboriosam sapiente odit neque ducimus aut.</p> -->
 
 
     <script>
@@ -36,8 +43,18 @@ QuerySelectorAll()
         // let query = document.querySelector('#id1');
         // query.innerHTML = "Everybode has gone online";
 
-         let query = document.querySelectorAll('h1');
-         query.innerHTML = "Everybode has gone online";
+        //  let query = document.querySelectorAll('h1');
+        //  query.innerHTML = "Everybode has gone online";
+
+
+
+        function clickme(){
+            document.write("Hi Muskan...................");
+        }
+
+        function time(){
+            document.getElementById("time").innerHTML = Date();
+        }
 
     </script>
     
