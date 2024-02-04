@@ -1,9 +1,23 @@
+let name = prompt("Name");
+let roll = prompt("Roll");
+let reg = prompt("Reg");
+let bangla = prompt("Bangla");
+
+console.log(`
+
+    Student Name    : ${name}
+    Roll Number     : ${roll}
+    Reg Number      : ${reg}
+    ==============================
+    Subject - Mark - GPA - Grade
+    
+    Bangla -${bangla} -${getGpa(bangla)} -${bangla}
+
+
+    Final Result = ${isPassed(bangla) ? "Passed" : "Failed"}
+    Final GPA = ${getFinalGPA(bangla).toFixed(2)}
+    Final Grade = ${getFinalGrade(bangla)}
  
-console.log(ageCal("Nasrin", 1997));
-console.log(ageCal2("Muskan", 1997));
-console.log(ageCal3("Nuha", 2013));
 
 
-console.log(`Hello, 300 dollar = ${currencyConverter(300, "won")}`);
-
-console.log(hello('Nasrin'));
+`);
