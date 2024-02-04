@@ -62,3 +62,7 @@ let currencyConverter = (amount , currencyType= 'dollar') => {
     let bdt = amount * rate;
     return bdt;
 }
+
+
+
+let hello = (name) => `Hello ${name},Welcome to our platform`;
