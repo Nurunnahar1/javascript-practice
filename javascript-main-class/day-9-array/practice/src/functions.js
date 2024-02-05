@@ -1,5 +1,5 @@
 const name = ["AAA", "BBB", "CCC", "DDD", "EEE", "FFF", "GGG"];
-const age = [8, 9, 5, 22, 30, 70, 80];
+const age = [8, 9, 5, 52, 30, 70, 80];
 const location = [
   "Dhaka",
   "Rajshahi",
@@ -7,17 +7,11 @@ const location = [
   "Rajshahi",
   "Dhaka",
   "Mymansing",
-  "Sherpur",
+  "Mymansing",
 ];
 
- 
-
-
-
-for (let i = 0; i < name.length; i++) { 
-  if (location[i] == "Rajshahi") {
-     console.log(`Hello ${name[i]}, You live in Rajshahi `);
-   }
+for (let i = 0; i < name.length; i++) {
+  if (location[i] != "Rajshahi" && age[i] <40) {
+    console.log(`Hello ${name[i]}, You live in Rajshahi `);
+  }
 }
- 
- 
