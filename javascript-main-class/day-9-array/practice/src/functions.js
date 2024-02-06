@@ -20,8 +20,16 @@
 
 
 const name = ['A', 'B', 'C', 'D', 'E'];
-name.push('F');
-name.unshift('O');
-name.pop(name);
-name.shift()
+    // name.push('F');
+    // name.unshift('O');
+    // name.pop(name);
+    // name.shift()
+// console.log(name.includes('d'));
+
+let sName = "Nasrin";
+
+if (!name.includes(sName)) { 
+  name.push(sName);
+}
+
 console.log(name);
