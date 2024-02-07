@@ -38,8 +38,24 @@
 
 //=================================
 
+        // const foods = ["potato", "brinjal", "pumpkin", "cucumber"];
+        // console.log(foods.reverse());
+        // console.log(foods.sort());
+        // console.log(foods.toString());   //array to string
+        // console.log(foods.join(', '));  
+
+
+
+
+//=================================
+// let text = "Hello, I am Nasrin, I am Laravel Developer.";
+// console.log(text.split(","));
+
+
+
+//=================================
 const foods = ["potato", "brinjal", "pumpkin", "cucumber"];
-// console.log(foods.reverse());
-// console.log(foods.sort());
-// console.log(foods.toString());   //array to string
-console.log(foods.join(', '));   //array to string
+
+foods.forEach((item) => {
+    console.log(`I love ${item}`);
+});
