@@ -29,6 +29,15 @@
 
 
 //=================================
+            // const foods = ["potato", "brinjal", "pumpkin", "cucumber"];
+            // // console.log(foods.findIndex((item) =>  item== "cucumber"));
+            // console.log(foods.indexOf('potato'));
+
+
+
+
+//=================================
+
 const foods = ["potato", "brinjal", "pumpkin", "cucumber"];
-// console.log(foods.findIndex((item) =>  item== "cucumber"));
-console.log(foods.indexOf('potato'));
+// console.log(foods.reverse());
+console.log(foods.sort());
