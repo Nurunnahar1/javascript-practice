@@ -40,4 +40,6 @@
 
 const foods = ["potato", "brinjal", "pumpkin", "cucumber"];
 // console.log(foods.reverse());
-console.log(foods.sort());
+// console.log(foods.sort());
+// console.log(foods.toString());   //array to string
+console.log(foods.join(', '));   //array to string
