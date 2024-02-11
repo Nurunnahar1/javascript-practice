@@ -46,15 +46,15 @@
 
 
 
+        //=================================
+        // let text = "Hello, I am Nasrin, I am Laravel Developer.";
+        // console.log(text.split(","));
+        
+        //=================================
+        const foods = ["potato", "brinjal", "pumpkin", "cucumber"];
+        
+        foods.forEach((item) => {
+            console.log(`I love ${item}`);
+        });
 
-//=================================
-// let text = "Hello, I am Nasrin, I am Laravel Developer.";
-// console.log(text.split(","));
-
-//=================================
-const foods = ["potato", "brinjal", "pumpkin", "cucumber"];
-
-foods.forEach((item) => {
-    console.log(`I love ${item}`);
-});
 
