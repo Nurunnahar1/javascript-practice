@@ -1,7 +1,7 @@
  
 const searchByBloodGroup = (bloodGroup) => donors.filter((donor) => donor.bloodGroup === bloodGroup.toUpperCase());
 
-const findRecentDonors = () => donors.filter((donor) => donor.lastDonationDaysAgo <= 120);
+const findRecentDonors = () => donors.filter((donor) => donor.lastDonationDaysAgo >= 120);
 
 const findUpcomingDonors = () => donors.filter((donor) => donor.lastDonationDaysAgo >= 110);
 
