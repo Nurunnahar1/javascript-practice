@@ -1,14 +1,19 @@
-const devs = [
-  {
-    name: "Nasrin",
-    age: 20,
-    hobby: ["gardening", "reading", "writing"],
-  },
-];
+// const devs = [
+//   {
+//     name: "Nasrin",
+//     age: 20,
+//     hobby: ["gardening", "reading", "writing"],
+//   },
+// ];
 
-devs.forEach((item) => {
-  const name = item.name;
-  const hobby = item.hobby[0]; 
+// devs.forEach((item) => {
+//   const name = item.name;
+//   const hobby = item.hobby[0];
 
-  console.log(`Hello ${name}, your hobby is ${hobby}.`);
-});
+//   console.log(`Hello ${name}, your hobby is ${hobby}.`);
+// });
+
+//===========================================================
+const food = ['rice', 'fruit', 'fish', 'orange', 'apple'];
+const [a, b, c, d, e] = food;
+console.log(d,e);
