@@ -23,4 +23,8 @@
 
 //===========================================================
 const fruits = ['Orange', 'Banana', 'Apple', 'Pineapple', 'Strawberry'];
-console.log([...fruits, "Plum"]);
+const flowers = ['Rose', 'Chinarose','Waterlily', 'Bela', 'Lotus'];
+
+const spreadFruitAndFlower = [...fruits, ...flowers]
+
+console.log(spreadFruitAndFlower);
