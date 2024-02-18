@@ -14,6 +14,13 @@
 // });
 
 //===========================================================
-const food = ['rice', 'fruit', 'fish', 'orange', 'apple'];
-const [a, b, c, d, e] = food;
-console.log(d,e);
+// const food = ['rice', 'fruit', 'fish', 'orange', 'apple'];
+// const [a, b, c, d, e] = food;
+// console.log(d, e);
+
+
+
+
+//===========================================================
+const fruits = ['Orange', 'Banana', 'Apple', 'Pineapple', 'Strawberry'];
+console.log([...fruits, "Plum"]);
