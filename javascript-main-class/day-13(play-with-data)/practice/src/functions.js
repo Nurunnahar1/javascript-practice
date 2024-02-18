@@ -18,13 +18,20 @@
 // const [a, b, c, d, e] = food;
 // console.log(d, e);
 
+//===========================================================
+// const fruits = ['Orange', 'Banana', 'Apple', 'Pineapple', 'Strawberry'];
+// const flowers = ['Rose', 'Chinarose','Waterlily', 'Bela', 'Lotus'];
+
+// const spreadFruitAndFlower = [...fruits, ...flowers]
+// console.log(spreadFruitAndFlower);
+
+
 
 
 
 //===========================================================
-const fruits = ['Orange', 'Banana', 'Apple', 'Pineapple', 'Strawberry'];
-const flowers = ['Rose', 'Chinarose','Waterlily', 'Bela', 'Lotus'];
+const fruits = ["Orange", "Banana", "Apple", "Pineapple", "Strawberry"];
+const flowers = ["Rose", "Chinarose", "Waterlily", "Bela", "Lotus"];
 
-const spreadFruitAndFlower = [...fruits, ...flowers]
-
-console.log(spreadFruitAndFlower);
+const newArray = [...fruits, ...flowers.filter((data) => data != "Lotus")];
+console.log(newArray);
