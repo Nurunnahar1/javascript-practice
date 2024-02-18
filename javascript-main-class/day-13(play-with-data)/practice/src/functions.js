@@ -30,8 +30,22 @@
 
 
 //===========================================================
-const fruits = ["Orange", "Banana", "Apple", "Pineapple", "Strawberry"];
-const flowers = ["Rose", "Chinarose", "Waterlily", "Bela", "Lotus"];
+    // const fruits = ["Orange", "Banana", "Apple", "Pineapple", "Strawberry"];
+    // const flowers = ["Rose", "Chinarose", "Waterlily", "Bela", "Lotus"];
 
-const newArray = [...fruits, ...flowers.filter((data) => data != "Lotus")];
-console.log(newArray);
+    // const newArray = [...fruits, ...flowers.filter((data) => data != "Lotus")];
+// console.log(newArray);
+    
+
+
+
+
+//===========================================================
+ const fruits = ["Orange", "Banana", "Apple", "Pineapple", "Strawberry"];
+ const flowers = ["Rose", "Chinarose", "Waterlily", "Bela", "Lotus"];
+
+const newArray = [
+  ...fruits.slice(1, 4),
+  ...flowers.filter((data) => data !== "Lotus"),
+];
+ console.log(newArray);
