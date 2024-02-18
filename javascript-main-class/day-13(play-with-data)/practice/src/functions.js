@@ -41,11 +41,27 @@
 
 
 //===========================================================
- const fruits = ["Orange", "Banana", "Apple", "Pineapple", "Strawberry"];
- const flowers = ["Rose", "Chinarose", "Waterlily", "Bela", "Lotus"];
+//  const fruits = ["Orange", "Banana", "Apple", "Pineapple", "Strawberry"];
+//  const flowers = ["Rose", "Chinarose", "Waterlily", "Bela", "Lotus"];
 
-const newArray = [
-  ...fruits.slice(1, 4),
-  ...flowers.filter((data) => data !== "Lotus"),
-];
- console.log(newArray);
+// const newArray = [
+//   ...fruits.slice(1, 4),
+//   ...flowers.filter((data) => data !== "Waterlily"),
+// ];
+//  console.log(newArray);
+
+
+
+
+
+
+//===========================================================
+const dev = {
+    name: "Nasrin",
+    age: 28,
+    skill: "Laravel Developer",
+
+}
+
+const asd = { ...dev, name: "Muskan" }
+console.log(asd);
