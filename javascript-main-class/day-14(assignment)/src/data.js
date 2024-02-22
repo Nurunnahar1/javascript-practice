@@ -1,16 +1,16 @@
- let studentsDatabase = [
-   {
-     name: "John",
-     roll: "001",
-     registration: "2021001",
-     gender: "Male",
-     marks: {
-       Math: { obtainedMarks: 85, grade: "A" },
-       Science: { obtainedMarks: 90, grade: "A+" },
-       English: { obtainedMarks: 80, grade: "A-" },
-     },
-     result: "Pass",
-   },
+//  let studentsDatabase = [
+//    {
+//      name: "John",
+//      roll: "001",
+//      registration: "2021001",
+//      gender: "Male",
+//      marks: {
+//        Math: { obtainedMarks: 85, grade: "A" },
+//        Science: { obtainedMarks: 90, grade: "A+" },
+//        English: { obtainedMarks: 80, grade: "A-" },
+//      },
+//      result: "Pass",
+//    },
 //    {
 //      name: "Alice",
 //      roll: "002",
@@ -119,5 +119,5 @@
 //      },
 //      result: "Pass",
 //    },
- ];
+//  ];
  

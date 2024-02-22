@@ -1,86 +1,88 @@
-// Function to add a new student to the database
+// Sample data for students
+const students = [
+  {
+    roll: 1,
+    registration: "A001",
+    name: "John",
+    gender: "Male",
+    marks: { math: 80, science: 75, english: 85 },
+  },
+  {
+    roll: 2,
+    registration: "A002",
+    name: "Jane Doe",
+    gender: "Female",
+    marks: { math: 70, science: 65, english: 75 },
+  },
+  {
+    roll: 3,
+    registration: "A003",
+    name: "Alice Smith",
+    gender: "Female",
+    marks: { math: 90, science: 85, english: 95 },
+  },
+  // Add more students similarly
+];
 
- 
-
-
-
-
- 
-
-// Function to search student by roll number
-function searchByRoll(rollNumber) {
-  return studentsDatabase.find((student) => student.roll === rollNumber);
-}
-
-// Function to search student by registration number
-function searchByRegistration(registrationNumber) {
-  return studentsDatabase.find( (student) => student.registration === registrationNumber );
-}
+// Function to search student data by roll or registration
+const searchStudent = (key, value) => {
+  return students.find(
+    (student) => student.roll === value || student.registration === value
+  );
+};
 
 // Function to calculate pass rate
-function calculatePassRate() {
-  const totalStudents = studentsDatabase.length;
-  const passedStudents = studentsDatabase.filter(
-    (student) => student.result === "Pass"
-  ).length;
+const calculatePassRate = () => {
+  const totalStudents = students.length;
+  const passedStudents = students.filter((student) => {
+    const { math, science, english } = student.marks;
+    return math >= 40 && science >= 40 && english >= 40;
+  }).length;
   return (passedStudents / totalStudents) * 100;
-}
-
-// Function to generate marksheet for a student
-function generateMarksheet(student) {
-  const { name, roll, registration, gender, marks } = student;
-  console.log(
-    `Marksheet for ${name} (Roll: ${roll}, Reg: ${registration}, Gender: ${gender}):`
-  );
-  console.log("-------------------------------------------------------");
-  console.log("| Subject    | Marks Obtained | Grade |");
-  console.log("-------------------------------------------------------");
-  Object.entries(marks).forEach(([subject, { obtainedMarks, grade }]) => {
-    console.log(
-      `| ${subject.padEnd(10)} | ${String(obtainedMarks).padStart(
-        14
-      )} | ${grade.padStart(5)} |`
-    );
-  });
-  console.log("-------------------------------------------------------");
-}
+};
 
 // Function to search students by gender
-function searchByGender(gender) {
-  return studentsDatabase.filter((student) => student.gender === gender);
-}
+const searchByGender = (gender) => {
+  return students.filter(
+    (student) => student.gender.toLowerCase() === gender.toLowerCase()
+  );
+};
 
- 
+// Function to generate marksheet of a student
+const generateMarksheet = (student) => {
+  const { name, marks } = student;
+  const totalMarks = Object.values(marks).reduce((acc, curr) => acc + curr, 0);
+  const percentage = (totalMarks / (Object.keys(marks).length * 100)) * 100;
 
+  console.log(`Name: ${name}`);
+//   console.log(`Marks:`);
+  Object.entries(marks).forEach(([subject, mark]) => {
+    console.log(`${subject}: ${mark}`);
+  });
+  console.log(`Total Marks: ${totalMarks}`);
+  console.log(`Percentage: ${percentage}%`);
+};
 
-
-
-// Function to handle search by roll or registration
-function searchStudent() {
-  const searchType = prompt("Enter 'roll' or 'registration' to search:").toLowerCase(); // Convert to lowercase for case-insensitive comparison
-  if (searchType === "roll") {
-    const rollNumber = prompt("Enter roll number:");
-    const student = searchByRoll(rollNumber);
-    if (student) {
-      console.log("Student found:");
-      console.log(student);
-    } else {
-      console.log("Student not found.");
-    }
-  } else if (searchType === "registration") {
-    const regNumber = prompt("Enter registration number:");
-    const student = searchByRegistration(regNumber);
-    if (student) {
-      console.log("Student found:");
-      console.log(student);
-    } else {
-      console.log("Student not found.");
-    }
+// Function to prompt for student roll or registration and display result
+const promptForResult = () => {
+  const input = prompt("Enter student roll or registration:");
+  const student =
+    searchStudent("roll", parseInt(input)) ||
+    searchStudent("registration", input);
+  if (student) {
+    generateMarksheet(student);
   } else {
-    console.log("Invalid search type. Please enter 'roll' or 'registration'.");
+    console.log("Student not found");
   }
-}
+};
 
- 
-// Test the search function
-searchStudent();
+// Example usage
+promptForResult();
+
+const passRate = calculatePassRate();
+console.log(`Pass Rate: ${passRate}%`);
+
+const genderInput = prompt("Enter gender to search (Male/Female):");
+const genderResult = searchByGender(genderInput);
+console.log(`${genderInput} Students:`);
+console.log(genderResult);
