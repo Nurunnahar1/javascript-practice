@@ -22,6 +22,6 @@ const devs = [
 ];
 
 // localStorage.setItem("devs", JSON.stringify(devs));
-let dev = localStorage.getItem("devs");         
+let dev = localStorage.getItem("devs");
 
 let devData = JSON.parse(dev);
