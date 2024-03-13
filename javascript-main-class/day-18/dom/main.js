@@ -8,6 +8,7 @@
 
 
 
-const child = document.querySelector(".box");
+const child = document.querySelector(".box p:nth-child(4)");
+console.log(child);
 
-console.log(child.firstElementChild.nextElementSibling); 
+// console.log(child.firstElementChild.nextElementSibling); 
