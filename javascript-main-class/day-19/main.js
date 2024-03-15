@@ -1,14 +1,10 @@
 const button = document.querySelector('.box .click');
 const heading = document.querySelector('.box .heading');
+const body = document.querySelector('body');
 
-button.addEventListener('click', () => {
-    heading.innerHTML = "Hello"
-})
-
-
-// const button = document.getElementsByClassName("click")[0]; // Selecting the first element with class 'click'
-// const heading = document.getElementsByClassName("heading")[0]; // Selecting the first element with class 'heading'
-
-// button.addEventListener("click", () => {
-//   heading.innerHTML = "Hello";
-// });
+function buttonClick() {
+    //  heading.innerHTML = "Hello Everyone"
+    body.style.backgroundColor ="red";
+}
+ 
+button.addEventListener('click', buttonClick);
