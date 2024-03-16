@@ -1,10 +1,10 @@
-const button = document.querySelector('.box .click');
-const heading = document.querySelector('.box .heading');
-const body = document.querySelector('body');
+const lists = document.querySelectorAll(".box ul li");
 
-function buttonClick() {
-    //  heading.innerHTML = "Hello Everyone"
-    body.style.backgroundColor ="red";
-}
+const colors = ["red", "green",   "yellow", "tomato"];
  
-button.addEventListener('click', buttonClick);
+lists.forEach((item, index) => {
+    item.onclick = (e) => {
+        // e.target.style.backgroundColor = "orange";
+        e.target.style.backgroundColor = colors[index];
+    }
+})
