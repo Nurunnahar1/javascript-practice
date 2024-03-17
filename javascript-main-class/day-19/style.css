@@ -1,0 +1,22 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: poppins;
+}
+body{
+    margin: 50px;
+}
+.team{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+.team-member{
+    text-align: center;
+}
+.team-member img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}

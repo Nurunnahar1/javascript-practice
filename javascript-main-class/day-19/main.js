@@ -1,10 +1,13 @@
-const lists = document.querySelectorAll(".box ul li");
+const team = document.querySelector(".team");
 
-const colors = ["red", "green",   "yellow", "tomato"];
- 
-lists.forEach((item, index) => {
-    item.onclick = (e) => {
-        // e.target.style.backgroundColor = "orange";
-        e.target.style.backgroundColor = colors[index];
-    }
-})
+let memberData = "";
+members.forEach((item, index) => {
+  memberData += `
+    <div class="team-member">
+            <img src="${item.photo}" alt="">
+            <h2>${item.name}</h2>
+            <p>${item.skill}</p>
+        </div>
+    `;
+    team.innerHTML = memberData;
+});
