@@ -1,9 +1,15 @@
- const button = document.querySelector('.box button');
+ const startButton = document.querySelector('.box .start');
+ const stopButton = document.querySelector('.box .stop');
 const heading = document.querySelector('.box h2');
- 
-button.onclick = (e) => {
-    setTimeout(() => {
-        heading.innerHTML = "Hello........"
 
-    },1000);
- }
+let kaj;
+ 
+startButton.onclick = (e) => {
+ kaj = setTimeout(() => {
+    heading.innerHTML = "Hello........";
+  }, 1000);
+};
+stopButton.onclick = (e) => {
+    clearTimeout(kaj);
+    heading.innerHTML = "Stop........";
+};
