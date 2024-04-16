@@ -1,9 +1,9 @@
-const button = document.querySelector('.box button');
+ const button = document.querySelector('.box button');
 const heading = document.querySelector('.box h2');
-
+ 
 button.onclick = (e) => {
-    e.preventDefault();
+    setTimeout(() => {
+        heading.innerHTML = "Hello........"
 
-    heading.innerHTML = "Hello Nasrin....."
-    
+    },1000);
  }
